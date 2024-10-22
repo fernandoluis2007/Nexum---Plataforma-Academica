@@ -1,0 +1,17 @@
+{
+    "name": "wef/calendar",
+    "description": "Calendario Agenda de Eventos com PHP",
+    "authors": [
+        {
+            "name": "Luis Fernando",
+            "email": "luis.ramos42@etec.sp.gov"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "../../class",
+            "Models\\": "../../model"
+        }
+    }
+}
