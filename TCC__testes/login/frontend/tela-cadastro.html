@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro-tela.css">
+    <link rel="nexum icon" href="./img/logo.png">
+    <title>Cadastro Nexum</title>
+</head>
+<body>
+    <section class="container-opcao"> 
+        <ul class="lista-opcao">    
+            <li class="opcao-cadastro">
+                <p class="btn-perfil" id="opcaoAluno">Aluno</p>
+            </li>
+            <li class="opcao-cadastro">
+                <p class="btn-perfil" id="opcaoProfessor">Professor</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="container-cadstro active">
+        <form method="post" id="formContainerProfessor" class="box" action="../backend/rotas/registrar.php">
+            <div class="cadastro-itens Aluno">
+                <h1 class="texto-itens">Nome do Aluno</h1>
+                <input type="text" name="nomeAluno" id="nomeAluno" class="inputIten" placeholder="Digite seu Nome..." required>
+            </div>
+
+            <div class="cadastro-itens Aluno">
+                <h1 class="texto-itens">CPF do Aluno</h1>
+                <input type="text" name="cpfAluno" id="cpfAluno" class="inputIten" placeholder="Digite seu CPF..." required>
+            </div>
+
+            <div class="cadastro-itens Aluno">
+                <h1 class="texto-itens">Senha do Aluno</h1>
+                <input type="password" name="senhaAluno" id="senhaAluno" class="inputIten" placeholder="Crie sua senha até 16 caracteres..." required>
+            </div>
+            
+            <div class="cadastro-itens Aluno">
+                <h1 class="texto-itens">Email do Aluno</h1>
+                <input type="email" name="emailAluno" id="emailAluno" class="inputIten" placeholder="Digite seu Email..." required>
+            </div>
+
+            <div class="cadastro-itens opcaoLista">
+                <h1 class="texto-itens">Sexo</h1><br>
+                <label>
+                    <input type="radio" name="sexo" value="feminino" checked required>
+                    <span>Feminino</span>
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="masculino" required>
+                    <span>Masculino</span>
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="outro" required>
+                    <span>Outro</span>
+                </label>
+            </div><br>
+            
+            <div class="cadastro-itens Aluno">
+                <h1 class="texto-itens">Cidade</h1>
+                <input type="text" name="cidadeAluno" id="cidadeAluno" class="inputIten" placeholder="Digite a Cidade atual onde mora..." required>
+            </div>
+
+            <div class="cadastro-itens Aluno">
+                <h1 class="texto-itens">Estado</h1>
+                <input type="text" name="estadoAluno" id="estadoAluno" class="inputIten" placeholder="Digite o Estado..." required>
+            </div>
+          <button class="botao" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="container-cadstro off">
+        <form method="post" id="formContainer" class="box" action="../backend/rotas/registrarProfessor.php">
+            <!--Professor nome-->
+            <div class="cadastro-itens">
+                <h1 class="texto-itens">Nome do Professor</h1>
+                <input type="text" name="nomeProfessor" id="nomeProfessor" class="inputIten" placeholder="Digite seu Nome..." required>
+            </div>
+
+            <!--Professor CPF-->
+                <div class="cadastro-itens">
+                    <h1 class="texto-itens">CPF do Professor</h1>
+                    <input type="text" name="cpfProfessor" id="cpfProfessor" class="inputIten" placeholder="Digite seu CPF..." required>
+                </div>
+                        
+            <!--Professor Senha-->
+            <div class="cadastro-itens">
+                <h1 class="texto-itens">Senha do Professor</h1>
+                <input type="password" name="senhaProfessor" id="senhaProfessor" class="inputIten" placeholder="Crie sua senha até 16 caracteres..." required>
+            </div>
+
+            <!--Professor Email-->
+            <div class="cadastro-itens">
+                <h1 class="texto-itens">Email do Professor</h1>
+                <input type="email" name="emailProfessor" id="emailProfessor" class="inputIten" placeholder="Digite seu Email..." required>
+            </div>
+            
+            <div class="cadastro-itens opcaoLista">
+                <h1 class="texto-itens">Sexo</h1><br>
+                <label>
+                    <input type="radio" name="sexo" value="feminino" checked required>
+                    <span>Feminino</span>
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="masculino" required>
+                    <span>Masculino</span>
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="outro" required>
+                    <span>Outro</span>
+                </label>
+            </div><br>
+            
+            <!--Professor Cidade-->
+            <div class="cadastro-itens">
+                <h1 class="texto-itens">Cidade</h1>
+                <input type="text" name="cidadeProfessor" id="cidadeProfessor" class="inputIten" placeholder="Digite a Cidade atual onde mora..." required>
+            </div>
+
+            <!--Professor Estado-->
+            <div class="cadastro-itens">
+                <h1 class="texto-itens">Estado</h1>
+                <input type="text" name="estadoProfessor" id="estadoProfessor" class="inputIten" placeholder="Digite o Estado..." required>
+            </div>
+            
+            <!--Professor Diciplina-->
+            <div class="cadastro-itens">
+                <h1 class="texto-itens">Diciplina do Professor</h1>
+                <input type="text" name="diciplinaProfessor" id="diciplinaProfessor" class="inputIten" placeholder="Digite a sua diciplina..." required>
+            </div><br>
+            <div class="container-botoes">
+                <button class="botao" type="submit">Enviar</button>
+                <a href="./tela-login-professor.html">Login</a>
+            </div>
+        </form>
+    </section>
+
+    <script src="./../backend/js/verifyTwo.js"></script>
+    <script src="./../backend/js/adjustment.js"></script>
+</body>
+</html>

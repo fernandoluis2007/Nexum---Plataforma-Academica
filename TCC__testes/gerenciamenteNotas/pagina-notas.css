@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte-efeitoTexto: "Manrope", sans-serif;
+}
+
+.cabeçario{
+    position: fixed;
+    z-index: 9997;
+    background-color: #ffff;
+    height: 50px;
+    width: 100%;
+    min-width: 100%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 25px 50px -12px;
+}
+
+.perfil-usuário{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    position: fixed;
+    gap: 20px;
+
+    & img{
+        transition: 0.3s;
+    }
+    img:hover{
+        cursor: pointer;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color: var(--federal-blue);
+}
+
+.opcoes-areas{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+    gap: 20px;
+
+    & img{
+        width: 35px;
+        height: 28px;
+    }
+}
+
+.opcoes-tela{
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    color: var(--federal-blue);
+    transition: 0.5s;
+}
+
+.opcoes-tela:hover{
+    transition: 0.5s;
+    transform: scale(1.1,1.1);
+    box-shadow: rgb(128, 158, 191) 0px 25px 50px -12px;
+}
+
+
+
+.textoEfeito{
+    font-family: var(--fonte-efeitoTexto);
+    font-size: 20px;
+    color: rgb(128, 158, 191);
+    cursor: pointer;
+}
+
+a{
+    color: var(--federal-blue);
+    text-decoration: none;
+}
+
+.container-sala{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 25% 25%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card-acoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: 1s;
+}
+
+.um{
+    display: flex;
+    background-color: #8ad9a7;
+    font-family: var(--fonte-principal);
+    color: white;
+    font-weight: 400;
+}
+
+
+.dois{
+    display: flex;
+    background-color: #9d339c;
+    font-family: var(--fonte-principal);
+    color: white;
+    font-weight: 400;
+}
+
+.tres{
+    display: flex;
+    background-color: #ec3c21;
+    font-family: var(--fonte-principal);
+    color: white;
+    font-weight: 400;
+}
+
+.off{
+    display: none;
+}
+
+
+.bi{
+    color: white;
+}
+
+.section-notas{
+    margin-top: 20px;
+    display: none;
+    width: 80%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-lista-notas{
+    margin-top: 20px;
+    display: none;
+    width: 80%;
+    height: 40%;
+    justify-content: center;
+}
+
+.section-excluir-notas {
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.tabelaNotas{
+    overflow: auto;
+    position: fixed;
+    background-color: #8ad9a7;
+    color: #f2f2f2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 60%;
+    height: max-content;
+    padding: 50px;
+    font-family: var(--fonte-efeitoTexto);
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.inputNotas{
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 250px;
+    max-width: 350px;
+    border: 2px solid #d9d9d9;
+    border-radius: 3px;
+    color: var(--federal-blue);
+    font-size: 16px;
+}
+
+input[type='submit']{
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    color: #8ad9a7;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type='submit']:hover{
+    transition: 0.5s;
+    color: #ffffff;
+    background-color: #dff5e7ca;
+}
+
+button{
+    margin-top: 10px;
+    background-color: #9d339c;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    color: #f2f2f2;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover{
+    transition: 1s;
+    color: #9d339c;
+    background-color: #f2f2f2;
+    transition: 1s;
+}
+
+.tabelaEditNotas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+input[type="number"],input[type="text"] {
+    width: 60%;
+}
+
+#mensagem table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#mensagem th, #mensagem td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#mensagem th {
+    background-color: #f2f2f2;
+}
+
+table{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+th{
+    border-radius: 4px;
+}
+
+tr{
+    font-family: var(--fonte-efeitoTexto);
+    font-size: 16px;
+    background-color:#9d339c;
+    color: #f2f2f2f2;
+    border-radius: 4px;
+}
+
+td{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    background-color: #f2f2f2f2;
+    padding: 8px;
+    color: var(--federal-blue);
+
+    & input[type="text"], input[type="number"]{
+        width: 70px;
+        padding: 10px;
+        border: rgb(92, 92, 92);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    & button{
+        width: 24px;
+        text-align: center;
+        padding: 8px;
+    }
+
+    
+}
+
+nav{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .section-lista-notas{
+        width: 70%;
+        height: 50%;
+    }
+
+    .card-acoes{
+        width: 230px;
+        height: 120px;
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    .section-notas{
+        width: 80%;
+        height: 60%;
+    }
+
+    .tabelaNotas{
+        height: 400px;
+    }
+
+    nav{
+        display: none;
+    }
+} 
+
+@media (max-width: 1600px){
+    .tabelaNotas{
+        height: 630px;
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+
+    .container-sala{
+        gap: 60px;
+    }
+
+    .card-acoes{
+        width: 200px;
+        height: 120px;
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    .section-notas{
+        width: 80%;
+        height: 100vh;
+    }
+
+    .tabelaNotas{
+        height: 80vh;
+        width: 80%;
+    }
+
+    nav{
+        display: none;
+    }
+} 
+
+@media (max-width: 425px){
+
+
+    
+    .container-sala{
+        overflow: auto;
+        display: flex;
+        gap: 26px;
+    }
+
+    .section-lista-notas{
+        width: 100%;
+        height: max-content;
+        justify-content: center;
+    }
+
+    .tabelaEditNotas{
+        width: max-content;
+        height: max-content;
+        
+    }
+
+    .opcoes-areas{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+    }
+
+}
+

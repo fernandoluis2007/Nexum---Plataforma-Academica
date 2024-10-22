@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/telaLogin.css">
+    <link rel="icon" href="./img/logo.png">
+    <title>Nexum - Login</title>
+</head>
+<body>
+    <section class="container">
+        <div class="tela-login">
+            <div class="card">
+                <h1 class="titulo-login">Login Professor</h1>
+                <form class="card" action="../backend/rotas/processar_loginProfessor.php" method="post">
+                    <input class="inputPlaceh" type="text" name="nomeProfessor" placeholder="Nome Professor" required>
+                    <input class="inputPlaceh" type="password" name="senhaProfessor" placeholder="Senha Professor" required>
+                    <button class="botao" type="submit">Enviar</button>
+                </form>
+                <p class="texto-aviso">Se você ainda não possui um cadastro, se cadastre <a class="link-aviso" href="./tela-cadastro.html">aqui</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

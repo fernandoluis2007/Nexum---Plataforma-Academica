@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --fonte-principal: "Poppins", sans-serif;
+    --federal-blue: #03045eff;
+    --marian-blue: #023e8aff;
+    --honolulu-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --pacific-cyan: #00b4d8ff;
+    --vivid-sky-blue: #48cae4ff;
+    --non-photo-blue: #90e0efff;
+    --non-photo-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+}
+body{
+    background-color: #fff;
+}
+
+.container__home{
+max-width: 37.5rem;
+margin: 8% auto 8%;
+padding: 0 1.25rem;
+}
+
+.barra__navegacao{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0px 0px 2px 0px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%; 
+}
+
+.lista__navegacao{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
+   margin: 0px 30px;
+   list-style: none;
+}
+
+.itens__navegacao{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: var(--marian-blue);
+    border: solid 1px rgba(255, 255, 255, 0);
+    transition: .5s;
+    border-radius: 20px 5px;
+    padding: 10px 
+}
+
+.logo__navegacao{
+    height: 55px;
+    margin-top: 5px;
+}
+
+.itens__navegacao:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.box:hover{
+    border: solid 1px var(--federal-blue);
+    background-color: var( --federal-blue);
+    
+    
+}
+
+
+.container__principalInf{   
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 50px;
+    padding: 0 15px 2px;
+}
+
+.caixaDeTexto{
+   font-family: var(--fonte-principal);
+}
+
+.card{
+    border: solid 5px var(--federal-blue);
+    background-color: var(--federal-blue);
+    border-radius: 20px 2px;
+    height: 160px;
+    width: 200px;
+    color: #fff;
+    align-items: center;
+    transition: 1s;
+}
+
+.descricao__card{
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.card:hover{
+    width: 300px;
+    height: 200px;
+    transition: 1s;
+}
+
+.container_informations{
+   display: flex; 
+   align-items: center;
+   width: 100%;
+   height: 550px;
+}
+
+.texto_titulo{
+    font-family: var(--fonte-principal);
+    font-size: 45px;
+    font-weight: 550;
+    color: var(--federal-blue);
+    margin: 0px 20px 18px;
+}
+
+
+.texto_tituloInf{
+    font-family: var(--fonte-principal);
+    font-size: 35px;
+    font-weight: 650;
+    color: var(--federal-blue);
+}
+
+.texto_descricao{
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin: 0px 20px 0px;
+}
+
+.texto_descricaoInf{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin: 0px 20px 0px;
+}
+
+.sess_informations{
+    flex-direction: column;
+    width: 50%;
+}
+
+.sess_informationsInf{
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxInformacao{
+    width: 65%;
+    height: 40%;
+}
+
+.inf__img{
+    width: 50%;
+    margin: 0 25%;
+}
+
+.footer_rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--federal-blue);
+    color: #fff;
+}
+
+.lista_rodape{
+    border-left: 1px solid #fff;
+    padding-left: 2em;
+    margin: 30px;
+    font-family: var(--fonte-principal);
+}
+
+.lista_rodape_item{
+    margin-top: 0.6em;
+}
+
+.icones{
+    width: 35px;
+    height: 35px;
+    margin: 12px 0px 12px
+}
+
+.container_informationsf{
+   display: flex; 
+   align-items: center;
+   width: 100%;
+   height: 550px;
+}
+
+.link-texto{
+    color: var(--federal-blue);
+    text-decoration: none;
+}
+
+.link-texto:hover{
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .container__home {
+        margin-top: 15%;
+    }
+}

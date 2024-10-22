@@ -1,0 +1,9 @@
+2024-09-19 06:30:09 - Verificação de credenciais - Nome: Cibeli, Hash armazenado: $2y$10$DstNgqII1d1z34ginUMz1eao833JUS6snb2RHfw8pqFieY3dCRhAu
+2024-09-19 06:30:09 - Falha na verificação de senha - Nome: Cibeli
+2024-09-19 06:30:09 - Falha no login - Nome ou senha incorretos. Nome: Cibeli
+2024-09-19 06:30:41 - Verificação de credenciais - Nome: Cibeli, Hash armazenado: $2y$10$DstNgqII1d1z34ginUMz1eao833JUS6snb2RHfw8pqFieY3dCRhAu
+2024-09-19 06:30:41 - Falha na verificação de senha - Nome: Cibeli
+2024-09-19 06:30:41 - Falha no login - Nome ou senha incorretos. Nome: Cibeli
+2024-09-19 06:36:36 - Falha no login - Nome ou senha incorretos. Nome: Cibeli
+2024-09-19 06:36:38 - Falha no login - Nome ou senha incorretos. Nome: Cibeli
+2024-09-19 06:36:41 - Falha no login - Nome ou senha incorretos. Nome: Cibeli

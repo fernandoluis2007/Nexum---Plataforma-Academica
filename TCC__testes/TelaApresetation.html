@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="nexum icon" href="./login/frontend/img/logo.png">
+    <link rel="stylesheet" href="./TelaPrin.css">
+    <link rel="stylesheet" href="./carrosel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <title>Tela Apresetation</title>
+</head>
+<body>
+    <nav class="barra__navegacao">
+      <img class="logo__navegacao" src="./img/logo.png" alt="imagem logo icone">
+        <ul class="lista__navegacao">
+            <li class="itens__navegacao box">Suporte</li>
+            <li class="itens__navegacao box">Nossas Funções</li>
+            <li class="itens__navegacao box"><a class="link-texto" href="./login/frontend/tela-de-login.html">Inscrever-se</a></li>
+        </ul>
+    </nav>
+
+    <!--Carrosel -->
+    <div class="container__home">
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0 "class="carousel__slide">
+                <div class="carousel__snapper">
+                <a href="#carousel__slide4"
+                    class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                    class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1"
+                class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2"
+                class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3"
+                class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1"
+                class="carousel__next">Go to first slide</a>
+            </li>
+            </ol>
+            <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                <a href="#carousel__slide1"
+                    class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                <a href="#carousel__slide2"
+                    class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                <a href="#carousel__slide3"
+                    class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                    class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+            </ol>
+            </aside>
+        </section>
+    </div>
+    <!--Fim do Carrosel -->
+
+    <!--Container de Informações-->
+    <div class="container_informations">
+        <section class="sess_informations left">
+            <div class="boxInformacao">
+                <h1 class="texto_titulo textoP">
+                    Quem nós somos?
+                </h1>
+                 <p class="texto_descricao textoP">
+                     Nexum é uma plataforma acadêmica que oferece acesso a artigos, monografias e recursos de
+                    ensino. Facilita a pesquisa e colaboração entre estudantes,pesquisadores e profissionais. Uma comunidade dedicada ao aprendizado e descoberta contínua.
+                 </p>
+            </div>
+        </section>
+        <section class="sess_informations">
+            <img class="inf__img" src="./img/imagem_informativa_texto.png" alt="imgaem para ilustrar">
+        </section>
+    </div>
+    <!--Fim Container de Informações-->
+
+    <!--Cards-->
+
+    <div class="container_informationsf">
+            <section class="sess_informationsInf">
+                <h1 class="texto_tituloInf"> Chat Ao Vivo </h1>
+                <img class="icones" src="./img/chat.svg">
+                <p class="texto_descricaoInf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam accusamus. </p>
+            </section>
+            
+            <section class="sess_informationsInf">
+                <h1 class="texto_tituloInf"> Gerenciar Tarefas </h1>
+                <img class="icones" src="./img/gear.svg">
+                <p class="texto_descricaoInf"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam accusamus. </p>
+            </section>
+
+            <section class="sess_informationsInf">
+                <h1 class="texto_tituloInf"> Material de Estudo </h1>
+                <img class="icones" src="./img/book-half.svg">
+                <p class="texto_descricaoInf"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam accusamus. </p>
+            </section>
+    </div>
+
+    <!--Fim dos Cards-->
+
+    <!--Futter-->
+    <footer>
+        <div class="footer_rodape">
+            <ul class="lista_rodape">
+                <li class="lista_rodape_item">EVELYN DE OLIVEIRA MORAIS</li>
+                <li class="lista_rodape_item">LUIS FERNANDO PELEGRINO RAMOS</li>
+                <li class="lista_rodape_item">MATHEUS SILVA MAGDALENA</li>
+                <li class="lista_rodape_item">PAULO ROBERTO INÁCIO DA SILVA</li>
+                <li class="lista_rodape_item">THIAGO KRESKI DUARTE</li>
+            </ul>
+            <ul class="lista_rodape">
+                <li class="lista_rodape_item">SUPORTE</li>
+                <li class="lista_rodape_item">SUGESTOES</li>
+                <li class="lista_rodape_item">DUVIDAS</li>
+                <li class="lista_rodape_item">CONTATOS</li>
+            </ul>
+            <ul class="lista_rodape">
+                <li class="lista_rodape_item">SOBRE NÓS</li>
+                <li class="lista_rodape_item">REDE SOCIAS</li>
+            </ul>
+        </div>
+    </footer>
+    <!--Fim do Futter-->
+
+</body>
+</html>
